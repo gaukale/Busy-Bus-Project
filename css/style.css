@@ -6,59 +6,34 @@
   body {
     display: flex;
     justify-content: center;
+
   }
-  .app {
+  .routelist{
     height: 667px;
-    width:375px;
-    min-height: 667px;
-    min-width: 375px;
-    overflow-y: hidden;
-    box-shadow:0 0px 4px rgba(1, 0, 0, 0.1);
+    width: 375px;
+    overflow:scroll;
   }
-  .appheader {
-  width: inherit;
-  position: fixed;
 
-  }
-  .status-bar {
-    height:20px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-image: url("../images/bar.png");
-  }
-.navbar {
-  height: 53px;
-
-}
-.navbar-content {
+.fa-chevron-left {
   margin: 0 10px;
-  height: inherit;
-  display:flex;
-  align-items: center;
-
-}
-  .navbar-content h1{
-  font-family: helvetica;
-  color:black;
-  font-size: 22px;
-  font-weight: 500;
-  margin-left: 45px;
-  margin-right: 45px;
-  display: inline;
-
   }
-
-.image{
+.fa-star{
+  margin-right: 10px;
+  float: right;
+  color: green;
+}
+.navbar h1{
+  font-family: helvetica;
+  font-weight: bold;
+  color:black;
+  margin-left: 70px;
+  display: inline;
+  }
+.map{
   height: 200px;
   background-image: url("../images/staticmap.png");
 }
-  .routelist {
-  position: relative;
-  top: 73px;
-  overflow-y: scroll;
-  height: calc(667px - 73px)
-  }
+
 .row {
   height: 70px;
   border-bottom: 1px solid rgb(236, 236, 236);
@@ -75,54 +50,45 @@
   font-size: 20px;
   font-weight: bold;
   color: white;
-  margin-left:25px;
+  margin-left:20px;
   margin-top: 8px;
-
 }
+
 .row:hover {
   background-color: lightgray;
   cursor: pointer;
 }
 
-.content {
+.route {
   display: flex;
-  margin: 10px;
   width: 100%;
   align-items: center;
 }
-
-.route {
-  min-width: 56px;
-  height: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .line {
   font-family: helvetica;
   font-size: 18px;
   color: green;
   font-weight: 500;
+  min-width: 56px;
+  display: flex;
+  justify-content: center;
 }
 
-.details-group {
+ .stop, .eta {
   width: 100%;
-  margin: 0 15px;
-}
-
-.details-group  ul li {
   font-family: helvetica;
   font-size: 15px;
-  letter-spacing: -2%;
-}
-
-.details-group ul {
   display: flex;
-  justify-content: space-between;
 }
+.eta{
+  justify-content:flex-end;
+  margin-right:5px;
+}
+.reroute, .row h1 li{
+background-color: orange;
+font-weight: bolder;
+}
+.noservice, .row h1 li {
+  background-color: darkgray;
 
-.eta {
-  width: 90px;
-  text-align: right;
 }
