@@ -6,10 +6,13 @@
   body {
     display: flex;
     justify-content: center;
-
   }
+  .navbar{
+    height: 35px;
+    margin-top: 15px;
+      }
   .routelist{
-    height: 667px;
+    height: 370px;
     width: 375px;
     overflow:scroll;
   }
@@ -19,16 +22,19 @@
   }
 .fa-star{
   margin-right: 10px;
+  margin-top: 3px;
   float: right;
   color: green;
 }
 .navbar h1{
   font-family: helvetica;
   font-weight: bold;
+  font-size: 22px;
   color:black;
-  margin-left: 70px;
+  margin-left: 42px;
   display: inline;
-  }
+      }
+
 .map{
   height: 200px;
   background-image: url("../images/staticmap.png");
